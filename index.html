@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Start Quiz Button -->
+    <div class="startButton">
+      <button class="startQuiz">Start Quiz</button>
+    </div>
+    <!-- Information and Rules Box -->
+    <div class="infoBox">
+      <div class="info-box-title">Some Rules of this Quiz</div>
+      <div class="info-list">
+        <div class="info-row">
+          1.You wil have only 15 seconds per each question.
+        </div>
+        <div class="info-row">
+          2.Once you select your answer, it can't be undone.
+        </div>
+        <div class="info-row">
+          3.You can't select any option once time goes off.
+        </div>
+        <div class="info-row">
+          4.You can't exit from the Quiz while you're playing.
+        </div>
+        <div class="info-row">
+          5.You'll get points on the basis of your correct answers.
+        </div>
+      </div>
+      <div class="footer">
+        <button class="exitBtn btn">Exit</button>
+        <button class="continueBtn btn">Continue</button>
+      </div>
+    </div>
+
+    <!-- Question Box -->
+    <div class="quiz-box">
+      <div class="quiz-header-section">
+        <div class="quiz-titleContainer">
+          <span class="quiz-title">Awesome Quiz Application</span>
+          <div class="timelineContainer">
+            <span class="time-line-title">Time Off</span>
+            <div class="timeline">00</div>
+          </div>
+        </div>
+        <div class="progressBar"></div>
+      </div>
+      <div class="quiz-content-section">
+        <div class="questionText">
+        <!-- We enter dynamic question here -->
+        </div>
+
+        <div class="options-list-container">
+            <!-- we put dynamic options here -->
+          <!-- <div class="options"></div> -->
+
+        </div>
+      </div>
+      <div class="quiz-footer-section">
+        <span class="quiz-footer-text">
+            
+          <span class="highlighted-text highlighted-text-1"></span>of
+          <span class="highlighted-text">10</span>Questions</span
+        >
+        <button class="nextBtn">Next Que</button>
+      </div>
+    </div>
+
+    <!-- Result declare box -->
+    <div class="result-box ">
+      <div class="crown-icon"><i class="fa-solid fa-crown"></i></div>
+      <div class="completed-text">You've completed the Quiz!</div>
+      <div class="score-text">and nice, you got 2 out of 10</div>
+      <div class="result-box-buttons-container">
+        <button class="replay-quiz">Retry Quiz</button>
+        <button class="quit-quiz">Leave Quiz</button>
+      </div>
+    </div>
+
+
+
+    <script src="./question.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
